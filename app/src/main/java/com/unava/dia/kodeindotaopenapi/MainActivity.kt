@@ -12,7 +12,6 @@ import org.kodein.di.generic.instance
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import retrofit2.Retrofit
-import butterknife.ButterKnife
 import com.unava.dia.kodeindotaopenapi.data.ApiInterface
 import com.unava.dia.kodeindotaopenapi.data.PlayerMatches
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity(), KodeinAware {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        ButterKnife.bind(this)
         kodein = (application as App).kodein
 
 
